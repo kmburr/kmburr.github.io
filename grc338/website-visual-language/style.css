@@ -1,0 +1,211 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+
+div {
+	max-width: 85em;
+	position:auto;
+	margin: auto;
+
+}
+div.home-container { 
+	background: url(home\ img\ vine.avif) center fixed;
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+}
+
+div.container { 
+	position: relative;
+	min-height: 100vh;
+	background-color: rgb(255, 255, 255);
+	
+}
+
+/* >>> IMPORTANT: you have to change the wrap the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class.  */
+
+
+main { 
+	padding: 1em 2em 2em;
+	}
+
+img {
+    width: 100%; /*Please leave this line.*/
+     display: inline-block;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	background:rgb(228, 228, 228);
+	padding: 1em 0.5em;
+	}
+
+h1 {
+	width: 20em;
+	}
+
+h2, h3, h4 {
+		font-weight: bold;
+		font-family: sans-serif;
+	}
+
+h2 {
+	font-size: 3em;
+	margin: 1em 0em 1em;
+	font-family: "limon-bold-marker", sans-serif;
+font-weight: 400;
+font-style: bold;
+	}
+	
+h3 {
+	font-size: 3em;
+	margin: 1em 1em;
+	font-family: "limon-script", sans-serif;
+font-weight: 200;
+font-style: normal;
+}
+h4 {
+	margin: 1em;
+	font-family: "p22-afton", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+
+a {
+	text-decoration: none;
+	font-family: sans-serif;
+	}
+
+nav ul  {
+	text-align: right;
+	}
+	
+ul li 	{
+	list-style-type: none;
+}
+
+figure {
+	margin: 1em 1.5em;
+}
+
+main.menu ul {
+		margin: 1em 1em;
+}	
+
+main.menu ul li {
+		margin: 1em 0em 0em;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+}	
+
+p {
+	font-family: "limon-bold-marker", sans-serif;
+font-weight: 400;
+font-style: normal;
+	}
+	
+p.description {
+	grid-column: 1/3, 2/3;
+	margin: 0em 1em;
+	color: rgb(0, 0, 0);
+	font-family: "limon-regular-marker", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+	}
+	
+p.price {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	color: rgb(0, 0, 0);
+	text-align: right;
+	margin: 1em;
+	}
+	
+nav ul li {
+	text-transform: uppercase;
+	font-weight: italic;
+	margin-bottom: 1em;
+	}
+	
+nav ul li a {
+	color: rgb(49, 7, 7);
+	background-color: rgb(255, 255, 255);
+	padding: 0.4em 0.5em 0.3em;
+	
+	}
+	
+
+p.slogan {
+	font-family: "limon-regular-marker", sans-serif;
+font-weight: 400;
+font-style: normal;
+color: rgb(255, 255, 255);
+font-size: 5em;
+	}
+	
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem; 
+  box-sizing: border-box;
+  padding: 1em 1em;
+  background: rgba(124, 0, 0, 0.779);
+  color: rgb(255, 255, 255);
+}
+
+p.address {
+	color: rgb(255, 255, 255);
+	font-size: 1.5em;
+	padding: 0em 0em;
+	font-style: normal;
+	}
+
+footer p {
+	margin: .001em;
+	padding: 0em
+}
+
+
+@media screen and (min-width: 60em) {				/* looking at it when it at least 60 em wide - if narrower , browser will ignore ------- 3 rules and 7 declarations */
+	
+	nav {
+		margin-top: 3em;
+	}
+
+	main.menu ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 10em;
+	}
+
+	nav ul li {
+		display: inline;
+		font-size: 1.5em;
+ 
+	}
+	
+	body {
+		background-color: rgb(190, 190, 190);
+	
+}
+}
+nav ul li.selected a {
+	color: rgb(255, 255, 255);
+	background-color: rgb(82, 13, 5);
+}
+article {
+		background-color: rgba(110, 110, 110, 0.177);
+		max-width: 60em;
+		margin: auto;
+		padding: 3em;
+		font-family: "limon-script", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+}
